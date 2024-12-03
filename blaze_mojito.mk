@@ -11,22 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mojito device
 $(call inherit-product, device/xiaomi/mojito/device.mk)
 
-# Inherit some Infinity-X stuffs
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some Project Blaze stuffs
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-INFINITY_MAINTAINER := Sachin_07
-
-# PRODUCT_SYSTEM_PROPERTIES
-ro.infinity.soc=Snapdragon 678
-ro.infinity.battery=5000 mAh
-ro.infinity.display=1080 x 2400, 60 Hz
-ro.infinity.camera=48MP + 8MP + 2MP + 2MP
-ro.product.marketname=Redmi Note 10 4G
+BLAZE_BUILD_TYPE := UNOFFICIAL
+BLAZE_MAINTAINER := Sachin_07
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_mojito
+PRODUCT_NAME := blaze_mojito
 PRODUCT_DEVICE := mojito
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10

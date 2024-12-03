@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_mojito.mk
+    $(LOCAL_DIR)/blaze_mojito.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_mojito-user \
-    infinity_mojito-userdebug \
-    infinity_mojito-eng
+    blaze_mojito-user \
+    blaze_mojito-userdebug \
+    blaze_mojito-eng
